@@ -3,7 +3,7 @@ services:
   mongodb:
     container_name: mongo
     image: mongo:latest
-    volume: 
+    volumes: 
       - ./backend/data:/data
     ports: 
       - "27017:27017"
